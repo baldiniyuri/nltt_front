@@ -5,8 +5,11 @@ const Image = () => {
 
 
   return (
-    <div>
-        Image Page
+    <div className="image-container">
+      <span>
+
+        Image Page asdas ds
+      </span>
     </div>
   );
 };

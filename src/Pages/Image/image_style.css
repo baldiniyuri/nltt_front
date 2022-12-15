@@ -1,0 +1,9 @@
+.image-container{
+    display: flex;
+    min-height: 300px;
+    background-color: black;
+}
+
+.image-container span{
+    color: white;
+}
