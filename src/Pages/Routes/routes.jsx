@@ -15,7 +15,7 @@ const RoutesApp = () => {
     
   
     return (
-        <body>
+        <body className="body-style">
             <Header/>
             <div>
              <Routes>

@@ -1,6 +1,26 @@
 .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     width: 100%;
-    min-height: 300px;
-    height: 300px;
-    border: solid black 2px;
+    min-height: 100px;
+    background-color: black;
+}
+
+.header-container button{
+    min-width: 100px;
+    min-height: 40px;
+    background-color: #61DBFB;
+    color: black;
+}
+
+.header-container button:hover{
+    cursor: pointer;
+    background-color: #1f3ff5;
+    color: black;
+}
+
+
+.App-logo{
+    max-height: 100px;
 }

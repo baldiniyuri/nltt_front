@@ -1,10 +1,11 @@
 import { postUserLogin} from "./action";
-import { setAuthToken, setUserId } from "Components/Envs/envs";
+import { setAuthToken, setUserId, url_host } from "../../../Components/Envs/envs";
 import axios from 'axios'
 
 
-export const UserLoginThank = (UserData, setError, setLoading, setIsLogged) => (dispatch) => {
-  axios.post(`/api/login/`, {
+export const UserLoginThunk = (UserData, setError, setLoading, setIsLogged) => (dispatch) => {
+
+  axios.post(`${url_host}/api/login/`, {
     "email": UserData.email,
     "password": UserData.password
   })

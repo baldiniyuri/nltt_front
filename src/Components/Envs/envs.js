@@ -1,7 +1,7 @@
 let TOKEN = ""
 let USER_ID = 0
 
-export const url_host = "http://localhost:3000"
+export const url_host = "http://127.0.0.1:8000"
 
 export const logoutUserSession = () => {
     TOKEN = ""

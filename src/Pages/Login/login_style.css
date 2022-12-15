@@ -1,0 +1,30 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+.login-container span{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    margin: auto;
+    padding: 1%;
+}
+
+.login-container button{
+    min-width: 100px;
+    min-height: 40px;
+    background-color: #61DBFB;
+    color: black;
+    margin-top: 2%;
+}
+
+.login-container button:hover{
+    cursor: pointer;
+    background-color: #1f3ff5;
+    color: black;
+}

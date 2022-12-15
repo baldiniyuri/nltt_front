@@ -1,13 +1,14 @@
 import "./footer_style.css";
+import {Footer_Text} from "./Components/footer_text";
 
 
 const Footer = () => {
 
 
   return (
-    <div>
-        Footer
-    </div>
+    <footer className="footer-container">
+        {Footer_Text}
+    </footer>
   );
 };
 
