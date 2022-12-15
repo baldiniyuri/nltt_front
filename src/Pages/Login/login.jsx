@@ -1,8 +1,11 @@
 import "./login_style.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {LoginAndRegisterField} from "../../Components/Inputs/register_login";
 import { LoginUser } from "./Components/login_requisitions";
 import { useDispatch } from "react-redux";
+import {getUserId} from "../../Components/Envs/envs";
+import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
   const [email, setEmail] = useState("")
@@ -11,6 +14,7 @@ const Login = () => {
   const [error, setError] = useState(null);
   const InputFieldFunctions = [setEmail, setPassword]
   const dispatch = useDispatch();
+  const navigate = useNavigate()
 
   const UserData = {
     email: email,
@@ -21,6 +25,14 @@ const Login = () => {
     let data = {dispatch, UserData, setError, setLoading}
     LoginUser(data)
   }
+  useEffect(() => {
+    let userId = getUserId()
+
+    if(!loading && userId !== 0) {
+      navigate("/images")
+    } 
+  }, [loading])
+
 
   return (
     <div className="login-container">
