@@ -9,7 +9,8 @@ const reducers = combineReducers({
   postUserLogin: userLoginReducer,
   registerUser: userRegisterReducer,
   postImage: postImageReducer,
-  getImage: getImageReducer
+  getImage: getImageReducer,
+
 });
 
 const store = createStore(reducers, applyMiddleware(thunk));
