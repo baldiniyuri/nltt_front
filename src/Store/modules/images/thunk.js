@@ -1,5 +1,5 @@
 import axios from "axios";
-import { postImageAction, getImageAction } from "./action";
+import { postImageAction } from "./action";
 import { url_host, getAuthToken, getUserId } from "../../../Components/Envs/envs";
 
 
@@ -23,13 +23,3 @@ export const PostImagesThunk = (userData, setError) => (dispatch) => {
     });
 };
 
-
-export const GetImageThunk = (userId, setError) => (dispatch) => {
-    axios.get(`${url_host}/api/images/${userId}/`)
-      .then((info) => {
-        dispatch(getImageAction(info.data));
-      })
-      .catch((error) => {
-        setError(error.response.status);
-      });
-  };

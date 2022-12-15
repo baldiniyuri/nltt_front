@@ -30,7 +30,7 @@ const Register = () => {
     let userId = getUserId()
 
     if(!loading && userId !== 0) {
-      navigate("/images")
+      navigate("/login")
     } 
   }, [loading])
 

@@ -8,14 +8,3 @@ export const postImageReducer = (state = [], action) => {
     }
   };
   
-
-export const getImageReducer = (state = [], action) => {
-    switch (action.type) {
-      case "@getImage/GET":
-        const { getImage } = action;
-        return [getImage];
-      default:
-        return state;
-    }
-  };
-  

@@ -5,9 +5,30 @@
     margin: auto;
     min-height: 300px;
     background-color: black;
-    color: white
+    color: white;
+    text-align: center;
 }
 
 .image-container span{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    padding-top: 1%;
+}
 
+
+.image-container  button{
+    min-width: 100px;
+    min-height: 40px;
+    background-color: #61DBFB;
+    color: black;
+    margin-top: 2%;
+}
+
+.image-container  button:hover{
+    cursor: pointer;
+    background-color: #1f3ff5;
+    color: black;
 }
